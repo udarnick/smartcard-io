@@ -1,5 +1,3 @@
-apply plugin: 'maven-publish'
-
 plugins {
 	id 'java-library'
 }
@@ -9,6 +7,8 @@ repositories {
 		dirs 'lib'
 	}
 }
+
+apply plugin: 'maven-publish'
 
 sourceSets.main.java.srcDirs = ['src']
 sourceSets.main.resources.srcDirs = ['nls', 'src']
